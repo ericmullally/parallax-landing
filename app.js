@@ -2,8 +2,19 @@ const mouse = document.querySelector("body");
 const bg = document.querySelector(".landing");
 const moon = document.querySelector(".landing-moon-img");
 const globe = document.querySelector(".landing-globe-img");
-const window_H = window.innerHeight;
-const window_W = window.innerWidth;
+let window_H = window.innerHeight;
+let window_W = window.innerWidth;
+
+const setSize = (h, w) => {
+  window_H = h;
+  window_W = w;
+};
+
+window.addEventListener("resize", e => {
+  const height = e.currentTarget.innerHeight;
+  const width = e.currentTarget.innerWidth;
+  setSize(height, width);
+});
 
 mouse.addEventListener("mousemove", e => {
   const X = e.pageX;
