@@ -30,6 +30,8 @@ body {
 }
 .landing-globe {
   position: fixed;
+  height: 500px;
+  width: 500px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -44,37 +46,28 @@ body {
   border-radius: 50%;
   display: block;
 }
-.landing__menu {
-  list-style: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1;
-  font-size: 3rem;
-  padding: 1rem 0;
-  display: flex;
-  justify-content: space-around;
-}
-.landing__menu::after {
-  content: "";
+.menu__item {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(31, 29, 29, 0.849);
-  z-index: -1;
+  z-index: 0;
+  font-size: 1.5rem;
+  letter-spacing: 3px;
 }
-.landing__menu li {
-  margin-bottom: 3rem;
+.menu__item a {
+  color: white;
 }
-a {
-  color: rgb(4, 40, 243);
-  display: block;
-  text-decoration: none;
-  transition: all 0.3s ease-in;
+.menu__item-1 {
+  top: -3rem;
+  left: -3rem;
 }
-.landing__menu li a:hover {
-  transform: scale(1.05);
+.menu__item-2 {
+  top: -3rem;
+  right: -3rem;
+}
+.menu__item-3 {
+  bottom: -4rem;
+  left: -4rem;
+}
+.menu__item-4 {
+  bottom: -4rem;
+  right: -4rem;
 }
