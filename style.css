@@ -55,19 +55,76 @@ body {
 .menu__item a {
   color: white;
 }
+
 .menu__item-1 {
   top: -3rem;
   left: -3rem;
+}
+
+.menu__line-1 {
+  width: 0;
+  height: 3px;
+  background-color: white;
+  top: -1rem;
+  left: 1rem;
+  transform: rotateZ(45deg) translate(-2px, -11px);
+  transform-origin: left;
+  transition: all 0.3s ease-in-out;
+}
+.menu__item-1:hover + .menu__line-1 {
+  width: 9rem;
 }
 .menu__item-2 {
   top: -3rem;
   right: -3rem;
 }
+.menu__line-2 {
+  width: 0;
+  height: 3px;
+  background-color: white;
+  top: -3rem;
+  right: -3rem;
+  transform: rotateZ(-33deg) translate(-74px, -21px);
+  transform-origin: right;
+  transition: all 0.3s ease-in-out;
+}
+.menu__item-2:hover + .menu__line-2 {
+  width: 9rem;
+}
+
 .menu__item-3 {
   bottom: -4rem;
   left: -4rem;
 }
+.menu__line-3 {
+  width: 0;
+  height: 3px;
+  background-color: white;
+  bottom: -4rem;
+  left: -4rem;
+  transform: rotateZ(-47deg) translate(44px, 46px);
+  transform-origin: left;
+  transition: all 0.3s ease-in-out;
+}
+.menu__item-3:hover + .menu__line-3 {
+  width: 10rem;
+}
+
 .menu__item-4 {
   bottom: -4rem;
   right: -4rem;
+}
+
+.menu__line-4 {
+  width: 0;
+  height: 3px;
+  background-color: white;
+  bottom: -4rem;
+  right: -4rem;
+  transform: rotateZ(47deg) translate(-66px, 69px);
+  transform-origin: right;
+  transition: all 0.3s ease-in-out;
+}
+.menu__item-4:hover + .menu__line-4 {
+  width: 10rem;
 }
